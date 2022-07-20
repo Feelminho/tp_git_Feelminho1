@@ -1,13 +1,16 @@
+
 #!/bin/python3
 
 import sys
 
-def add (a,b):
-	return (a+b)
+def add(x,y):
+return x+y
 
-def main ():
-	a = int (sys.argv [1])
-	b = int (sys.argv [2])
-	print (add(a,b))
+nbr_arg=len (sys.argv)-1
+if (nbr_arg < 2):
+print ("Error")
 
-main ()
+x=int(sys.argv[1])
+y=int(sys.argv[2])
+
+print (add(x,y))
